@@ -46,7 +46,7 @@ export interface Source {
 
 export declare class ReadableStream {
   constructor(
-    underlyingSource: Source,
+    underlyingSource?: Source,
     options?: { size?: (chunk: any) => number; highWaterMark?: number; }
   );
   readonly locked: boolean;
