@@ -12,11 +12,13 @@ test(category + 'enqueue() -> write()', () => {
   const rs1 = new ReadableStream({
     start(controller) {
       controller.enqueue(123);
+      controller.enqueue(456);
     }
   });
   rs1.pipeTo(new WritableStream({ write }));
   return new Promise((resolve) => setTimeout(resolve)).then(() => {
-    assert(write.callCount === 1);
+    assert(write.callCount === 2);
     assert(write.getCall(0).args[0] === 123);
+    assert(write.getCall(1).args[0] === 456);
   });
 });
