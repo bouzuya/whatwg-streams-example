@@ -111,7 +111,7 @@ export interface Sink {
 }
 
 export declare class WritableStream {
-  constructor(underlyingSink: Sink);
+  constructor(underlyingSink?: Sink);
   // constructor(underlyingSink = {}, { size, highWaterMark = 1 } = {})
   readonly locked: boolean;
   abort(reason: any): Promise<any>;
