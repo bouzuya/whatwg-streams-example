@@ -22,6 +22,7 @@
     "./test/fns/filter.ts",
     "./test/fns/fold.ts",
     "./test/fns/map.ts",
+    "./test/fns/merge.ts",
     "./test/fns/take.ts",
     "./test/complete.ts",
     "./test/error.ts",
