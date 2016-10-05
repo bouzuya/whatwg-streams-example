@@ -20,6 +20,7 @@
     "./src/index.ts",
     "./test/fns/drop.ts",
     "./test/fns/filter.ts",
+    "./test/fns/fold.ts",
     "./test/fns/map.ts",
     "./test/fns/take.ts",
     "./test/complete.ts",
